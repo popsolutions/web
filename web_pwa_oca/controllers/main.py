@@ -35,8 +35,8 @@ class PWA(Controller):
     def manifest(self):
         qweb = request.env['ir.qweb'].sudo()
         config_param = request.env['ir.config_parameter'].sudo()
-        pwa_name = config_param.get_param("pwa.manifest.name", "Odoo PWA")
-        pwa_short_name = config_param.get_param("pwa.manifest.short_name", "Odoo PWA")
+        pwa_name = config_param.get_param("pwa.manifest.name", "PopSolutions")
+        pwa_short_name = config_param.get_param("pwa.manifest.short_name", "PopSolutions")
         icon128x128 = config_param.get_param(
             "pwa.manifest.icon128x128",
             "/web_pwa_oca/static/img/icons/icon-128x128.png")
